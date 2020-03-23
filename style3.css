@@ -1,0 +1,72 @@
+.header h1 {
+    font-size: 42px;
+    font-family: "Century Gothic", sans-serif;
+    text-align: end;
+    margin: 56px;
+}
+
+.navigation {
+    font-size: 17px;
+    font-family: "Century Gothic";
+    text-transform: uppercase;
+    font-weight: lighter;
+    background: rgba(146, 117, 93, 0.46);
+    text-align: center;
+    padding: 18px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.navigation .nav {
+    padding: 4px;
+    justify-content: center;
+}
+
+.navigation .nav:hover {
+    text-decoration: underline;
+    color: deeppink;
+}
+
+.content {
+    padding: 16px;
+    color: rgba(141, 128, 62, 0.67);
+    justify-content: center;
+}
+
+.footer {
+    padding: 4px;
+    margin: 4px;
+    border: 2px;
+    border-style: dot-dot-dash;
+    text-align: center;
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+
+body, html {
+    height: 100%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url(designclaud-leuven-plattegrond-poster.jpg);
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mx-auto {
+    margin: auto;
+}
+
+.d-block {
+    display: block;
+}
