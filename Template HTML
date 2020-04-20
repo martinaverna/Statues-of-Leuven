@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Oishii - Fine Japanese Cuisine ">
+
+    <link rel="stylesheet" href="template.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mercator</title>
+</head>
+<body>
+
+<div class="hoofding"><h1 class="hoofding"><b>MERCATOR</b></h1><br>
+</div>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNavbar">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+
+            <h1 class="brand brand-name navbar-left"><a class=navbar-left"><a href="SculpturesofLeuven.html"><b>STATUES OF LEUVEN</b></a></h1>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="SculpturesofLeuven.html"><b>Home</b></a></li>
+                <li><a href="Info2.html"><b>About</b></a></li>
+                <li><a href="extrastatues.html"><b>Statues</b></a></li>
+                <li><a href="map.html"><b>Mapping</b></a></li>
+                <li><a href="extracontact.html"><b>Contact</b></a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="site">
+    <div class="kontainer">
+        <div class="img" style="background: url('https://statues.vanderkrogt.net/Foto/be/bevb003-2.jpg') " title="Photo credit: https://statues.vanderkrogt.net/"></div>
+        <div class="text-kontainer">
+            <h2>Mercator</h2>
+            <p> <b>Location:</b> Mercatorpad, 3000 Leuven</br>
+                <b>Material:</b> Bronze </br>
+                <b>Creator:</b> Raoul Biront </br>
+                <b>Year:</b> 2001 </br>
+                Mercator, vooral bekend om zijn wereld- en hemelatlas, leefde in de 16de eeuw en verbleef heel wat jaren in Leuven. Aanvankelijk om wiskunde te studeren, later om er te werken als landmeter. Op zijn 24ste huwde hij met Barbara Schellekens, waarschijnlijk een Leuvense dame, met wie hij zes kinderen kreeg, die allemaal werden gedoopt in de Sint-Pieterskerk. Mercator woonde met zijn gezin in de Schrijnmakersstraat, vlakbij de Mechelsestraat. In die buurt bevond zich ook het Drietalencollege (de huidige Wentelsteen op de Vismarkt)  Op zijn 40ste verliet Mercator Leuven om zich in zijn geboorteland Nederland te vestigen. Het was een geschenk van het Handelaarsverbond ter ere van haar 55-jarig bestaan. Het gaat om de <b>meest authentieke beeltenis van Mercator: met een wereldbol en een passer</b>. Een andere afbeelding van Mercator tref je aan in de beeldengalerij van de gevel van het stadhuis, aan de kant van het politiebureau.
+            </p>
+            <a href="map.html" target="_blank">Go to map</a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
