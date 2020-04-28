@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Oishii - Fine Japanese Cuisine ">
+
+    <link rel="stylesheet" href="template.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>De Dijle eend</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNavbar">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+
+            <h1 class="brand brand-name navbar-left"><a class=navbar-left"><a href="SculpturesofLeuven.html"><b>STATUES OF LEUVEN</b></a></h1>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="SculpturesofLeuven.html"><b>Home</b></a></li>
+                <li><a href="Info2.html"><b>About</b></a></li>
+                <li><a href="extrastatues.html"><b>Statues</b></a></li>
+                <li><a href="map.html"><b>Mapping</b></a></li>
+                <li><a href="extracontact.html"><b>Contact</b></a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="site">
+    <div class="kontainer">
+        <div class="img" style="background: url('https://lh4.ggpht.com/64VF3OF9ijroEo0wQHcus7YRPTdswqKMTpJUGBBTJKiIMjkLGRVLiipxoBy-JfYx6sqrXQDqWBTaJLM9lxUX'); background-repeat: no-repeat;  " title="Photo credit: Tripadviser"></div>
+        <div class="text-kontainer">
+            <h2>De Dijle eend</h2>
+            <br> <b>Location:</b> Redingehof, 3000 Leuven</br>
+            <b>Material:</b> Bronze </br>
+            <b>Creator:</b> René Rosseel </br>
+            <b>Year:</b> / </br></br>
+            The Dijle-duck drinking fountain was designed by the neighborhood of the Redingenstraat and ordered from René Rosseel to beautify their neighborhood. The duck is said to be a good luck charm. You need to rub his back three times and grasp the tail with the little finger. Then you have to step around the fountain up to the black button in the ground and press it. Then you drink from the fountain and make an - unspoken - wish.            </br></br>
+        </div>
+        <div class="map"> <div id="map" ></div> </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    var map = L.map('map').setView([50.874744, 4.696307],15);
+    L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Elai0T56rsYOsxHkJPwp', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}).addTo(map);
+
+    var marker = L.marker([50.874744, 4.696307]).addTo(map);
+
+    var popupContent = '<a href="template.html">MERCATOR</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb003-2.jpg" height= "120" >' ;
+    marker.bindPopup(popupContent);
+</script>
+
+</body>
+</html>

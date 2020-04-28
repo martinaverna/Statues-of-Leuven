@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <meta name="description" content="Map Page">
+
+    <link rel="stylesheet" href="Alg.css">
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+
+    <title>Map Page</title>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNavbar">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+
+            <h1 class="brand brand-name navbar-left"><a class=navbar-left"><a href="SculpturesofLeuven.html"><b>STATUES OF LEUVEN</b></a></h1>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="SculpturesofLeuven.html"><b>Home</b></a></li>
+                <li><a href="Info2.html"><b>About</b></a></li>
+                <li><a href="extrastatues.html"><b>Statues</b></a></li>
+                <li><a href="map.html"><b>Mapping</b></a></li>
+                <li><a href="extracontact.html"><b>Contact</b></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+</br></br>
+</br>
+</br>
+</br>
+<div style="padding-left: 5%; padding-right: 5%;">
+<div id ="map"></div>
+</div>
+
+
+
+<script>
+var map = L.map('map').setView([50.8798438,4.7005176],14);
+L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Elai0T56rsYOsxHkJPwp', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}).addTo(map);
+
+var marker = L.marker([50.882587, 4.697618]).addTo(map);
+
+var popupContent = '<a href="template.html">MERCATOR</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb003-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+var marker = L.marker([50.879263, 4.702140]).addTo(map);
+
+var popupContent = '<a href="Fonske.html">FONSKE</a> </br> <img src="https://i.pinimg.com/originals/b5/c4/a0/b5c4a0869d55185acf5a9e3fb466213a.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+var marker = L.marker([50.878426, 4.699832]).addTo(map);
+
+var popupContent = '<a href="Kotmadam.html">KOTMADAM</a> </br> <img src="https://www.louismoens.be/Steden/Leuven/dekotmadam.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+var marker = L.marker([ 50.879831, 4.698384 ]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">PAEP THOON</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.874248, 4.700000 ]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">Renée</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.879990, 4.703392 ]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">DORRE DE BAKKER</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.877762, 4.690969 ]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">ZITTEND MEISJE</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.882134, 4.714172 ]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">DE VRIENDSCHAPSBALLON</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.877101, 4.709226 ]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">MAN EN VROUW</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.881308, 4.697601 ]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">KONING ALBERT I</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+var marker = L.marker([ 50.881343, 4.696632 ]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">FIERE MARGRIET</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.879430, 4.701325 ]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">JACQUEMART</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.878541, 4.706282 ]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">TOTEM (DE KEVER)</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.876110, 4.702840 ]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">PIETER DE SOMER</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.880270, 4.700355 ]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">ERASMUS</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+
+var marker = L.marker([ 50.874744, 4.696307]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">DE DIJLE EEND</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.877572, 4.716338]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">EUROPA</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.880275, 4.709845]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">JUSTUS LIPSIUS</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.882477, 4.686343]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">DE KOEIESKIETER</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.880967, 4.691334]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">PATER DAMIAAN</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.875363, 4.703361]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">KAMEROOD SESTIG</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.875347, 4.702224]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">ABRAHAM</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.875236, 4.700799]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">CELESTIAL GLOBE</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+var marker = L.marker([ 50.877377, 4.709228]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">VALLEND PAARD</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.877377, 4.709228]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">DE WITTE</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+var marker = L.marker([ 50.877283, 4.706348]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">EDOUARD REMY</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.887626, 4.700745]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">KANAALGRAVERS</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.876383, 4.690632]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">VAN DE WEYER</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+
+var marker = L.marker([ 50.879071, 4.701377]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">STATUES OF THE STADHUIS</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+var marker = L.marker([ 50.880623, 4.701530]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">PIETER COUTEREEL</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+var marker = L.marker([ 50.881054, 4.697252]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">Nationaal monument van de weerstand</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+var marker = L.marker([ 50.876809, 4.702014]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">LEEUWENPAAR</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+var marker = L.marker([ 50.871426, 4.712175]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">LEON SCHREURS</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+
+var marker = L.marker([ 50.879152, 4.700741]).addTo(map);
+
+var popupContent = '<a href="Paep_Thoon.html">HET MOORINNEKEN</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg" height= "120" >' ;
+marker.bindPopup(popupContent);
+</script>
+
+
+</script>
+
+</body>
+</html>
