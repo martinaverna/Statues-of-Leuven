@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Abraham</title>
+    <title>Pater Damiaan</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
@@ -48,25 +48,27 @@
 
 <div class="site">
     <div class="kontainer">
-        <div class="img" style="background: url('https://mapio.net/images-p/71030748.jpg'); background-repeat: no-repeat;
-    background-size: cover;" title="Photo credit: https://mapio.net/images-p/71030748.jpg"></div>
-
-
+        <div class="img" style="background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Leuven_Standbeeld_Pater_Damiaan.jpg/320px-Leuven_Standbeeld_Pater_Damiaan.jpg');background-repeat: no-repeat;
+background-size: cover; " title="Photo credit: Sally V / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)"></div>
         <div class="text-kontainer">
-            <h2>Abraham</h2>
-            <p> <b>Location:</b> Sint-Donatuspark, 3000 Leuven<br>
-                <b>Material:</b> Stone <br>
-                <b>Creator:</b> Freddy Janssens <br>
-                <b>Year:</b> 1975 <br><br>
-                Abraham is the symbol of wisdom and
-                of the men who have reached the age of 50. In 1975, at the request
-                of the Mannen van het Jaar (Men
-                of the year), the statue of Abraham, made by
-                the artist Freddy Janssens, was installed in the
-                Broekstraat and later, for reasons
-                visibility and after a 'happening',
-                moved to the entrance of the municipal park.
+            <h2>Pater Damiaan</h2>
+            <p> <b>Location:</b> Brusselsestraat, 3000 Leuven<br>
+                <b>Material:</b> Bronze <br>
+                <b>Creator:</b> Constantin Meunier <br>
+                <b>Year:</b> 1894 <br><br>
+                The statue of Father Damien, also called the
+                Father of lepers, is probably one of the
+                less well-known in Leuven. It was carried out by
+                the sculptor and painter Constantin Meunier in
+                1894 - only five years after the death of
+                Damien - at the request of the Catholic Circle. <br>
+                What few people know is that the face of the
+                statue does not represent Father Damien, but the
+                Canon Thiery. As a close acquaintance of
+                Constantin Meunier, he arranged to be depicted in memory of someone else.
+
             </p>
+
         </div>
         <div class="map"> <div id="map" ></div> </div>
 
@@ -81,9 +83,9 @@
     var map = L.map('map').setView([50.8798438,4.7005176],14);
     L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Elai0T56rsYOsxHkJPwp', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}).addTo(map);
 
-    var marker = L.marker([50.875347, 4.702224]).addTo(map);
+    var marker = L.marker([50.880967, 4.691334]).addTo(map);
 
-    var popupContent = '<a href="Abraham.html">ABRAHAM</a> <br> <img src="https://mapio.net/images-p/71030748.jpg" height= "120" >' ;
+    var popupContent = '<a href="Pater_Damiaan.html">PATER DAMIAAN</a> <br> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Leuven_Standbeeld_Pater_Damiaan.jpg/320px-Leuven_Standbeeld_Pater_Damiaan.jpg" height= "120" >' ;
     marker.bindPopup(popupContent);
 </script>
 

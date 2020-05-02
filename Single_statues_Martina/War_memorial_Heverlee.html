@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Abraham</title>
+    <title>War memorial Heverlee</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
@@ -48,25 +48,22 @@
 
 <div class="site">
     <div class="kontainer">
-        <div class="img" style="background: url('https://mapio.net/images-p/71030748.jpg'); background-repeat: no-repeat;
-    background-size: cover;" title="Photo credit: https://mapio.net/images-p/71030748.jpg"></div>
-
+        <div class="img" style="background: url('https://beeldbank.onroerenderfgoed.be/images/170879/content/medium'); background-repeat: no-repeat; background-size: cover;  " title="Photo credit: Taken by Verloove, Claartje on 04-06-2010"></div>
 
         <div class="text-kontainer">
-            <h2>Abraham</h2>
-            <p> <b>Location:</b> Sint-Donatuspark, 3000 Leuven<br>
-                <b>Material:</b> Stone <br>
-                <b>Creator:</b> Freddy Janssens <br>
-                <b>Year:</b> 1975 <br><br>
-                Abraham is the symbol of wisdom and
-                of the men who have reached the age of 50. In 1975, at the request
-                of the Mannen van het Jaar (Men
-                of the year), the statue of Abraham, made by
-                the artist Freddy Janssens, was installed in the
-                Broekstraat and later, for reasons
-                visibility and after a 'happening',
-                moved to the entrance of the municipal park.
-            </p>
+            <h2>Oorlogsmonument Heverlee</h2>
+            <b>Location:</b> Waversebaan, 3001 Heverlee<br>
+            <b>Material:</b> Bronze <br>
+            <b>Creator:</b> Ernest Bastin<br>
+            <b>Year:</b> 1919 <br><br>
+            Set in a bush-planted park, a memorial war statue in the shape of a statue depicting a bronze-cast soldier
+            advancing with his head raised and a flag on the left, placed on a tall, hard stone base with a slightly conical, square shaft and ditto pillow.
+            The base is decorated with oak branches, the shaft with hanging festoons at the corners, and the cushion with bundled laurel branches. <br>
+            The pedestal has various inscriptions: on the front "HEVERLEE / ON HIS / GLORIERYKE / CHILDREN / DIED / FOR THE / FATHERLAND / 1914-1918 /"
+            and "NO YOU WILL NEVER DIVIDE / WHAT A VAND SHOWS AND POWS ./ FREEDOM; FREEDOM; HERITAGE OF THE BELGIANS /
+            BLOOD PURCHASED WITH THE FATHER./ DE LAET "; on the back side. "
+            <br><br>
+            <a href="https://inventaris.onroerenderfgoed.be/erfgoedobjecten/214973" class="card-link text-primary">Discover more</a>
         </div>
         <div class="map"> <div id="map" ></div> </div>
 
@@ -81,9 +78,9 @@
     var map = L.map('map').setView([50.8798438,4.7005176],14);
     L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Elai0T56rsYOsxHkJPwp', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}).addTo(map);
 
-    var marker = L.marker([50.875347, 4.702224]).addTo(map);
+    var marker = L.marker([50.837900, 4.673020]).addTo(map);
 
-    var popupContent = '<a href="Abraham.html">ABRAHAM</a> <br> <img src="https://mapio.net/images-p/71030748.jpg" height= "120" >' ;
+    var popupContent = '<a href="War_memorial_Heverlee.html">WAR MEMORIAL<br>HEVERLEE</a> <br> <img src="https://beeldbank.onroerenderfgoed.be/images/170879/content/medium" height= "120" >' ;
     marker.bindPopup(popupContent);
 </script>
 

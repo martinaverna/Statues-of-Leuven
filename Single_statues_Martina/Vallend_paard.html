@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Abraham</title>
+    <title>Vallend Paard</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
@@ -48,25 +48,21 @@
 
 <div class="site">
     <div class="kontainer">
-        <div class="img" style="background: url('https://mapio.net/images-p/71030748.jpg'); background-repeat: no-repeat;
-    background-size: cover;" title="Photo credit: https://mapio.net/images-p/71030748.jpg"></div>
-
-
+        <div class="img" style="background: url('https://leenhuet.files.wordpress.com/2012/08/poot.jpg'); background-repeat: no-repeat; background-size: contain; " title="Photo credit: https://leenhuet.files.wordpress.com/2012/08/poot.jpg"></div>
         <div class="text-kontainer">
-            <h2>Abraham</h2>
-            <p> <b>Location:</b> Sint-Donatuspark, 3000 Leuven<br>
-                <b>Material:</b> Stone <br>
-                <b>Creator:</b> Freddy Janssens <br>
-                <b>Year:</b> 1975 <br><br>
-                Abraham is the symbol of wisdom and
-                of the men who have reached the age of 50. In 1975, at the request
-                of the Mannen van het Jaar (Men
-                of the year), the statue of Abraham, made by
-                the artist Freddy Janssens, was installed in the
-                Broekstraat and later, for reasons
-                visibility and after a 'happening',
-                moved to the entrance of the municipal park.
+            <h2>Vallend Paard</h2>
+            <p> <b>Location:</b> Blijde Inkomststraat 21, 3000 Leuven<br>
+                <b>Material:</b> Bronze <br>
+                <b>Creator:</b> Rik Poot <br>
+                <b>Year:</b> 1989 <br><br>
+                The statue of the Vallend Paard (Falling Horse in English) was made by Belgian artist Rik Poot in 1989 for the exhibition 'Sculpture after sculpture' at the K.U.Leuven.
+                It is located in the courtyard of the Erasmushuis, the faculty of "Letteren en Wijsbegeerte".
+
+                <br>
+
+
             </p>
+
         </div>
         <div class="map"> <div id="map" ></div> </div>
 
@@ -81,9 +77,9 @@
     var map = L.map('map').setView([50.8798438,4.7005176],14);
     L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Elai0T56rsYOsxHkJPwp', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}).addTo(map);
 
-    var marker = L.marker([50.875347, 4.702224]).addTo(map);
+    var marker = L.marker([50.877377, 4.709228]).addTo(map);
 
-    var popupContent = '<a href="Abraham.html">ABRAHAM</a> <br> <img src="https://mapio.net/images-p/71030748.jpg" height= "120" >' ;
+    var popupContent = '<a href="Vallend_paard.html">VALLEND PAARD</a> <br> <img src="https://leenhuet.files.wordpress.com/2012/08/poot.jpg" height= "120" >' ;
     marker.bindPopup(popupContent);
 </script>
 

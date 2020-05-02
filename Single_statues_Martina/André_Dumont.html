@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Abraham</title>
+    <title>André Dumont</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
@@ -48,42 +48,42 @@
 
 <div class="site">
     <div class="kontainer">
-        <div class="img" style="background: url('https://mapio.net/images-p/71030748.jpg'); background-repeat: no-repeat;
-    background-size: cover;" title="Photo credit: https://mapio.net/images-p/71030748.jpg"></div>
-
-
+        <div class="img" style="background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Leuven_Standbeeld_van_Andr%C3%A9_Dumont.jpg/512px-Leuven_Standbeeld_van_Andr%C3%A9_Dumont.jpg'); background-repeat: no-repeat;
+    background-size: cover; " title="Photo credit: Sally V / CC BY-SA (https://creativecommons.org/licenses/by-sa/4.0)"></div>
         <div class="text-kontainer">
-            <h2>Abraham</h2>
-            <p> <b>Location:</b> Sint-Donatuspark, 3000 Leuven<br>
-                <b>Material:</b> Stone <br>
-                <b>Creator:</b> Freddy Janssens <br>
-                <b>Year:</b> 1975 <br><br>
-                Abraham is the symbol of wisdom and
-                of the men who have reached the age of 50. In 1975, at the request
-                of the Mannen van het Jaar (Men
-                of the year), the statue of Abraham, made by
-                the artist Freddy Janssens, was installed in the
-                Broekstraat and later, for reasons
-                visibility and after a 'happening',
-                moved to the entrance of the municipal park.
-            </p>
+            <h2>André Dumont</h2>
+            <p> <b>Location:</b> Hogeschoolplein, 3000 Leuven<br>
+                <b>Material:</b> Bronze <br>
+                <b>Creator:</b> Paul Van de Kerckhove <br>
+                <b>Year:</b> 1922 <br><br>
+                Professor André Dumont was the discoverer of the coal measures of
+                Belgian Limburg. In Leuven he formed the Association of Mining Engineers,
+                which consisted of graduates from K.U. Leuven
+                and had a double function: to put graduates
+                on the shop floor and to keep them informed
+                of the latest developments in industry. The
+                statue of professor Dumont was an initiative
+                of this Association. A work by sculptor Paul Van de Kerckhove, it was unveiled in 1922.
+
+                <br>
         </div>
         <div class="map"> <div id="map" ></div> </div>
 
     </div>
-
 </div>
 
 
 
 
+
+
 <script>
-    var map = L.map('map').setView([50.8798438,4.7005176],14);
+    var map = L.map('map').setView([50.874248, 4.700000],14);
     L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Elai0T56rsYOsxHkJPwp', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}).addTo(map);
 
-    var marker = L.marker([50.875347, 4.702224]).addTo(map);
+    var marker = L.marker([50.877306, 4.701647]).addTo(map);
 
-    var popupContent = '<a href="Abraham.html">ABRAHAM</a> <br> <img src="https://mapio.net/images-p/71030748.jpg" height= "120" >' ;
+    var popupContent = '<a href="André_Dumont.html">ANDRÉ DUMONT</a> <br> <img src=\'https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Leuven_Standbeeld_van_Andr%C3%A9_Dumont.jpg/512px-Leuven_Standbeeld_van_Andr%C3%A9_Dumont.jpg\'height= "120" >' ;
     marker.bindPopup(popupContent);
 </script>
 

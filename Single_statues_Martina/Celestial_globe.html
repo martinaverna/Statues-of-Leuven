@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Abraham</title>
+    <title>Celestial Globe</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
@@ -46,46 +46,46 @@
     </div>
 </nav>
 
+
 <div class="site">
     <div class="kontainer">
-        <div class="img" style="background: url('https://mapio.net/images-p/71030748.jpg'); background-repeat: no-repeat;
-    background-size: cover;" title="Photo credit: https://mapio.net/images-p/71030748.jpg"></div>
-
-
+        <div class="img" style="background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Kangxi-Verbiest_hemelglobe_01.jpg/640px-Kangxi-Verbiest_hemelglobe_01.jpg');background-repeat: no-repeat;
+    background-size: cover;" title="Photo credit: Polyglot / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)"></div>
         <div class="text-kontainer">
-            <h2>Abraham</h2>
-            <p> <b>Location:</b> Sint-Donatuspark, 3000 Leuven<br>
-                <b>Material:</b> Stone <br>
-                <b>Creator:</b> Freddy Janssens <br>
-                <b>Year:</b> 1975 <br><br>
-                Abraham is the symbol of wisdom and
-                of the men who have reached the age of 50. In 1975, at the request
-                of the Mannen van het Jaar (Men
-                of the year), the statue of Abraham, made by
-                the artist Freddy Janssens, was installed in the
-                Broekstraat and later, for reasons
-                visibility and after a 'happening',
-                moved to the entrance of the municipal park.
-            </p>
+            <h2>Celestial Globe</h2>
+            <p> <b>Location:</b> Arras College, 3000 Leuven<br>
+                <b>Material:</b> Bronze <br>
+                <b>Creator:</b> Ferdinand Verbiest (replica) <br>
+                <b>Year:</b> 1989 <br><br>
+                The Kangxi celestial globe is an exact replica of the instrument that the Jesuit Ferdinand Verbiest designed for the imperial court in China in 1673.
+                The original is in the Imperial Observatory in Beijing, together with other astronomical instruments that Verbiest built.
+                The replica was produced entirely manually according to the original techniques,
+                with the exception of the invisible parts. It is the same size as the original but it has been made slightly heavier to minimize future distortions.
+                The celestial globe contains 1888 celestial objects in the form of larger knots and smaller points,
+                the stars and celestial bodies known at the end of the seventeenth century.</p>
+            <br>
+
+
+            <a href="https://nieuws.kuleuven.be/nl/campuskrant/1314/04/gevonden-voorwerp--de-kangxi-hemelglobe" class="card-link text-primary">Discover more</a>
+
         </div>
         <div class="map"> <div id="map" ></div> </div>
 
     </div>
-
 </div>
 
 
 
-
 <script>
-    var map = L.map('map').setView([50.8798438,4.7005176],14);
+    var map = L.map('map').setView([50.874248, 4.700000],14);
     L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Elai0T56rsYOsxHkJPwp', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}).addTo(map);
 
-    var marker = L.marker([50.875347, 4.702224]).addTo(map);
+    var marker = L.marker([50.875236, 4.700799]).addTo(map);
 
-    var popupContent = '<a href="Abraham.html">ABRAHAM</a> <br> <img src="https://mapio.net/images-p/71030748.jpg" height= "120" >' ;
+    var popupContent = '<a href="Celestial_globe.html">CELESTIAL GLOBE</a> <br> <img src=\'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Kangxi-Verbiest_hemelglobe_01.jpg/640px-Kangxi-Verbiest_hemelglobe_01.jpg\'height= "120" >' ;
     marker.bindPopup(popupContent);
 </script>
+
 
 </body>
 </html>
