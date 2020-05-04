@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Statues of Leuven">
+
+    <link rel="stylesheet" href="template.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mercator</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNavbar">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+
+            <h1 class="brand brand-name navbar-left"><a class=navbar-left"><a href="SculpturesofLeuven.html"><b>STATUES OF LEUVEN</b></a></h1>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="SculpturesofLeuven.html"><b>Home</b></a></li>
+                <li><a href="Info2.html"><b>About</b></a></li>
+                <li><a href="extrastatues.html"><b>Statues</b></a></li>
+                <li><a href="map.html"><b>Mapping</b></a></li>
+                <li><a href="extracontact.html"><b>Contact</b></a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="site">
+    <div class="kontainer">
+        <div class="img" style="background: url('https://statues.vanderkrogt.net/Foto/be/bevb003-2.jpg'); background-repeat: no-repeat; background-size: cover;  " title="Photo credit: https://statues.vanderkrogt.net/"></div>
+
+        <div class="text-kontainer">
+            <h2>Mercator</h2>
+            <b>Location:</b> Mercatorpad, 3000 Leuven</br>
+            <b>Material:</b> Bronze </br>
+            <b>Creator:</b> Raoul Biront </br>
+            <b>Year:</b> 2001 </br></br>
+            Mercator, best known for its world and celestial atlas, lived in the 16th century and spent many years in Leuven. Initially to study mathematics, later to work as a surveyor. At the age of 24 he married Barbara Schellekens, probably a lady from Leuven, with whom he had six children, all of whom were baptized in St. Peter's Church. Mercator lived with his family on Schrijnmakersstraat, near Mechelsestraat. The Trials College (the current Wentelsteen on the Vismarkt) was also located in that area. Mercator left Leuven at the age of 40 to settle in his native Netherlands. It was a gift from the Merchants' Association in honor of its 55th anniversary. It concerns the <b> most authentic effigy of Mercator: with a globe and a compass </b>. You will find another image of Mercator in the sculpture gallery of the facade of the town hall, on the side of the police station.
+        </div>
+        <div class="map"> <div id="map" ></div> </div>
+
+    </div>
+
+</div>
+
+
+
+
+<script>
+    var map = L.map('map').setView([50.8798438,4.7005176],14);
+    L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Elai0T56rsYOsxHkJPwp', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}).addTo(map);
+
+    var marker = L.marker([50.882587, 4.697618]).addTo(map);
+
+    var popupContent = '<a href="template.html">MERCATOR</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb003-2.jpg" height= "120" >' ;
+    marker.bindPopup(popupContent);
+</script>
+
+</body>
+</html>
