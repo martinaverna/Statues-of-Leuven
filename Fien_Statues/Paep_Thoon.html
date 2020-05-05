@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Statues of Leuven">
+
+    <link rel="stylesheet" href="template.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paep Thoon</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNavbar">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+
+            <h1 class="brand brand-name navbar-left"><a class=navbar-left"><a href="SculpturesofLeuven.html"><b>STATUES OF LEUVEN</b></a></h1>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="Info2.html"><b>About</b></a></li>
+                <li><a href="extrastatues.html"><b>Statues</b></a></li>
+                <li><a href="map.html"><b>Mapping</b></a></li>
+                <li><a href="extracontact.html"><b>Contact</b></a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="site">
+    <div class="kontainer">
+        <div class="img" style="background: url('https://statues.vanderkrogt.net/Foto/be/bevb006-2.jpg'); background-repeat: no-repeat; background-size: cover; " title="Photo credit: https://statues.vanderkrogt.net/object.php?webpage=ST&record=bevb006"></div>
+        <div class="text-kontainer">
+            <h2>Paep Thoon</h2>
+             <b>Location:</b> Brusselstraat (aan de arm van de Dijle), 3000 Leuven</br>
+                <b>Material:</b> Bronze </br>
+                <b>Creator:</b> Peter Vanbekbergen </br>
+                <b>Year:</b> 1961 </br></br>
+            Thoon was a natural child of Jan vander Phalizen, pastor of the Sint-Pieterskerk in Leuven. Thoon lived in the 15th century; the only known date is the year 1434 in which his father gave him an annual interest. Thoon may have been hunchbacked. Thoon was organist and carillonneur in St. Peter's Church. He became known for the pranks he played in the city. When things got too bad, a judge in Leuven sentenced him to exile in Liège. Thoon was never allowed to set foot on Leuven ground.
+
+            Thoon returned to Leuven with a horse and cart. His shoes were covered in mud from Liège and he asked the city guard to let him in through the gate. This led to a crowd flow. The judge was called in. Thoon shouted out loud that with the mud from Liège on his shoes he did not set foot on Leuven ground. The spectacle ended that the judge admitted. Thoon also lived in Leuven as a jester. For example, he was told that he made fun of learned university students.
+
+            Thoon wished to be buried, standing, his mouth under a gargoyle of St. Peter's Church. He would never be thirsty like that. In fact, no one knows where he was buried    </div>
+        <div class="map"> <div id="map" ></div> </div>
+    </div>
+</div>
+
+<script>
+    var map = L.map('map').setView([50.879831, 4.698384],14);
+    L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=Elai0T56rsYOsxHkJPwp', {attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}).addTo(map);
+
+    var marker = L.marker([50.879831, 4.698384]).addTo(map);
+
+    var popupContent = '<a href="template.html">MERCATOR</a> </br> <img src="https://statues.vanderkrogt.net/Foto/be/bevb003-2.jpg" height= "120" >' ;
+    marker.bindPopup(popupContent);
+</script>
+<div id="google_translate_element" style="padding-left: 2px; padding-top: 2px; padding-bottom: 2px;"></div>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
