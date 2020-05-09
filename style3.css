@@ -1,0 +1,253 @@
+.header h1 {
+    font-size: 42px;
+    font-family: "Century Gothic", sans-serif;
+    text-align: center;
+    margin: 56px;
+
+}
+
+
+.content {
+    padding: 16px;
+    color: rgba(141, 128, 62, 0.67);
+    justify-content: center;
+
+}
+
+
+.footer {
+    padding: 4px;
+    margin: 4px;
+    border: 2px;
+    border-style: dot-dot-dash;
+    text-align: center;
+    place-content: initial;
+}
+
+.footer span {
+    font-weight: bold;
+}
+
+.navbar-fixed-top {
+    color: black;
+}
+
+body, html {
+    height: 100%;
+    background-image: url('https://beeldenwandelingleuven.files.wordpress.com/2015/06/scarabc3a9.jpg');
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg {
+    /* The image used */
+    background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mx-auto {
+    margin: auto;
+}
+
+.d-block {
+    display: block;
+}
+
+.row {
+    color: white;
+    font-size: 2em;
+    font-family: "Century Gothic";
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    font-size: 69.5%;
+}
+
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    line-height: 90px;
+    text-align: center;
+    font-family: "Century Gothic";
+    padding-top: 7em;
+    padding-left: 0em;
+
+
+}
+
+.nav div.logo {
+    float: initial;
+    width: auto;
+    height: auto;
+    text-shadow: black 0.1em 0.1em 0.2em;
+
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 9rem;
+    font-family: "Century Gothic";
+    font-weight: bold;
+}
+
+
+
+.nav div.logo a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navsmall div.main_list ul {
+    width: 100%;
+    height: 46px;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 0.6rem;
+    padding-left: 1rem;
+
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #3864a8;
+}
+
+/*small version nav bar section */
+
+/*===== GOOGLE TRANSLATE WIDGET======*/
+
+
+.goog-te-banner-frame {display:none;}
+#goog-gt-tt {display:none!important;visibility:hidden!important;}
+
+.goog-te-gadget {
+    font-family: "Century Gothic", 'Open Sans', sans-serif!important;
+
+}
+.goog-te-gadget-simple  {
+    background-color: transparent!important;
+    border: none!important;
+    padding: none!important;
+    border-radius: 4px!important;
+    font-size: 17px!important;
+    line-height:2rem!important;
+    display: inline-block;
+    cursor: pointer;
+    zoom: 1;
+
+}
+
+.goog-te-menu2 {
+    max-width: 100%;
+}
+.goog-te-menu-value {
+    color: white !important;
+    font-weight: bold;
+}
+
+.goog-te-menu-value:hover {
+    color: #3864a8 !important;
+    text-decoration :none;
+}
+
+.goog-te-menu-value span:nth-child(5) {
+    display:none;
+}
+.goog-te-menu-value span:nth-child(3) {
+    border:none!important;
+    font-family: 'Century Gothic';
+}
+
+.goog-te-gadget-icon {
+    display: none;
+}
+
+/* ============ HIDE TOP BAR ============*/
+.goog-te-banner-frame.skiptranslate {display: none!important;}
+body {top: 0px!important;}
+
+/* ================================== *\
+    Mediaqueries
+\* ================================== */
+@media (max-width: 667px) {
+    #google_translate_element {
+        bottom: calc(100% - 50% - 53px);
+        left: 16px !important;
+        width: 100% !important;
+    }
+    .goog-te-gadget {
+        width:100%!important;
+    }
+    .skiptranslate {
+        width:100%!important;
+    }
+    .goog-te-gadget-simple {
+        width: calc(100% - 32px)!important;
+        text-align: center;
+    }
+}
+
+/* =========FOOTER========*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: right;
+    font-family: "Century Gothic", 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+
+}
