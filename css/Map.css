@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two');
+
+body, html {
+    background-image: linear-gradient(90deg, #32619d, #3f8ed9);
+
+}
+
+ #map{
+     height: 600px;
+     width: 70%;
+     float: left;
+ }
+
+#mapid { height: 180px;
+padding-left: 5%;
+}
+
+
+.row {
+    color: black;
+    font-size: 16px;
+    font-family: "Century Gothic";
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+
+}
+
+.header h1 {
+    font-size: 30px;
+    font-family: "Century Gothic", sans-serif;
+    text-align: center;
+    margin: 56px;
+
+}
+
+* ===== NAVIGATION ======*/
+
+
+.navbar {
+    z-index: 9999;
+    letter-spacing: 3px;
+}
+
+.navbar .nav > li > a {
+    line-height: 20px;
+}
+
+.navbar-header h1 {
+    padding-left: 3%;
+    color: #4380ce;
+    font-family: "Century Gothic", cursive;
+    font-size: 1em;
+}
+
+.navbar li a, .navbar {
+    color: #4380ce;
+    font-size: 17px;
+    transition: all 0.6s 0s;
+    font-family: "Century Gothic";
+}
+
+.navbar-toggle {
+    border: 0;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #3864a8 !important;
+}
+
+
+* ===== weather ======*/
+
+body, html {
+    background-image: linear-gradient(90deg, #32619d, #3f8ed9);
+}
+
+.kontainer{
+
+    width: 300px;
+    background-color: #FFF;
+
+    padding-bottom : 50px;
+    margin-top: 34%;
+    margin-left: 18%;
+    margin-right: 12%;
+    margin-bottom: 10%;
+}
+
+.app-title{
+    width: 300px;
+    height: 50px;
+}
+
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-kontainer{
+    width: 300px;
+    height: 260px;
+    background-color: #F4F9FF;
+}
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+    color: #293251;
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover{
+
+}
+
+.temperature-value span{
+    color: #293251;
+    font-size: 0.5em;
+}
+
+.temperature-description{
+
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location{
+
+}
+
+.location p{
+    margin: 0;
+    padding: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+/*===== FOOTER ======*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: right;
+    padding-left: 14px;
+    font-family: "Century Gothic", 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 14px;
+}

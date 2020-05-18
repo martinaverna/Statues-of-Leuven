@@ -1,0 +1,177 @@
+* ===== NAVIGATION ======*/
+
+
+.navbar {
+    z-index: 9999;
+
+}
+
+.navbar .nav > li > a {
+    line-height: 20px;
+    letter-spacing: 3px;
+}
+
+.navbar-header h1 {
+    padding-left: 3%;
+    color: #4380ce;
+    font-family: "Century Gothic", cursive;
+    font-size: 1em;
+}
+
+.navbar li a, .navbar {
+    color: #4380ce;
+    font-size: 17px;
+    transition: all 0.6s 0s;
+    font-family: "Century Gothic";
+}
+
+.navbar-toggle {
+    border: 0;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #500000 !important;
+}
+
+body, html {
+    height: 100%;
+    background-image: url('https://beeldenwandelingleuven.files.wordpress.com/2015/06/scarabc3a9.jpg');
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+form { max-width:400px;
+    padding-top: 10%;
+    margin:50px auto; }
+
+.feedback-input {
+    color:white;
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #fef6ff;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+
+.feedback-input:focus { border:2px solid #fef6ff; }
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+[type="submit"] {
+    font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #4380ce;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+/*===== GOOGLE TRANSLATE WIDGET======*/
+
+.goog-te-banner-frame {display:none;}
+#goog-gt-tt {display:none!important;visibility:hidden!important;}
+
+.goog-te-gadget {
+    font-family: "Century Gothic", 'Open Sans', sans-serif!important;
+}
+.goog-te-gadget-simple  {
+    background-color: transparent!important;
+    border: none!important;
+    padding: none!important;
+    border-radius: 4px!important;
+    font-size: 17px!important;
+    line-height:2rem!important;
+    display: inline-block;
+    cursor: pointer;
+    zoom: 1;
+}
+
+.goog-te-menu2 {
+    max-width: 100%;
+}
+.goog-te-menu-value {
+    color: #777 !important;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.goog-te-menu-value:hover {
+    color: #500000 !important;
+    text-decoration :none;
+}
+
+.goog-te-menu-value span:nth-child(5) {
+    display:none;
+}
+.goog-te-menu-value span:nth-child(3) {
+    border:none!important;
+    font-family: 'Century Gothic';
+}
+
+.goog-te-gadget-icon {
+
+    display: none;
+}
+
+/* ============ HIDE TOP BAR ============*/
+.goog-te-banner-frame.skiptranslate {display: none!important;}
+body {top: 0px!important;}
+
+/* ================================== *\
+    Mediaqueries
+\* ================================== */
+@media (max-width: 667px) {
+    #google_translate_element {
+        bottom: calc(100% - 50% - 53px);
+        left: 16px !important;
+        width: 100% !important;
+    }
+    .goog-te-gadget {
+        width:100%!important;
+    }
+    .skiptranslate {
+        width:100%!important;
+    }
+    .goog-te-gadget-simple {
+        width: calc(100% - 32px)!important;
+        text-align: left;
+    }
+}
+
+/* =====Footer======*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: right;
+    font-family: "Century Gothic", 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
