@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Statues of Leuven">
+
+    <link rel="stylesheet" href="statues.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>statues</title>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#myNavbar">
+                <span class="glyphicon glyphicon-menu-hamburger"></span>
+            </button>
+
+            <h1 class="brand brand-name navbar-left"><a class=navbar-left"><a href="SculpturesofLeuven.html"><b>STATUES OF LEUVEN</b></a></h1>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="extrastatues.html"><b>Statues</b></a></li>
+                <li><a href="Info2.html"><b>Info</b></a></li>
+                <li><a href="map.html"><b>Map</b></a></li>
+                <li><a href="extracontact.html"><b>Contact</b></a></li>
+
+                <!-- Google Translate API -->
+                <li><div id="google_translate_element" style="padding-left: 12px; padding-top: 6px; "></div></li>
+
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: "en,fr,nl,it", layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                <script>
+
+                    var trls = "<i class=\"fa fa-language fa-2x\"></i>";
+
+
+
+                    $(document).ready(function(){
+                        $('#google_translate_element').bind('DOMNodeInserted', function(event) {
+                            $('.goog-te-menu-value span:first').html(trls);
+                            $('.goog-te-menu-frame.skiptranslate').load(function(){
+                                setTimeout(function(){
+                                    $('.goog-te-menu-frame.skiptranslate').contents().find('.goog-te-menu2-item-selected .text').html(trls);
+                                }, 100);
+                            });
+                        });
+                    });
+                </script>
+
+                <!--end of Translate API-->
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="container-fluid" style="margin-top:7%;">
+    <h1 class="hoofding"><b>THE STATUES</b></h1><br>
+</div>
+<div class="row">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="showall-tab" data-toggle="pill" href="#showall" role="tab" aria-controls="showall" aria-selected="true">Show all</a>
+        </li>
+        <li class="nav-item" >
+            <a class="nav-link" id="historical-tab" data-toggle="pill" href="#historical" role="tab" aria-controls="historical" aria-selected="false">Historical</a>
+        </li>
+        <li class="nav-item" >
+            <a class="nav-link" id="imaginary-tab" data-toggle="pill" href="#imaginary" role="tab" aria-controls="imaginary" aria-selected="false">Imaginary</a>
+        </li>
+        <li class="nav-item" >
+            <a class="nav-link" id="animals-tab" data-toggle="pill" href="#animals" role="tab" aria-controls="animals" aria-selected="false">Animals</a>
+        </li>
+    </ul>
+</div>
+
+
+<div class="container">
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane active" id="showall" role="tabpanel" aria-labelledby="showall-tab">
+            <div class="Portfolio"><a href="Renée.html"><img class= "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Leuven_Ren%C3%A9e.jpg/160px-Leuven_Ren%C3%A9e.jpg" alt="Renée"></a><div class="desc">Renée</div></div>
+            <div class="Portfolio"><a href="Dorre_de_Bakker.html"><img class= "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Leuven_Dorre_de_Bakker.jpg/160px-Leuven_Dorre_de_Bakker.jpg" alt= "Dorre de Bakker"></a><div class="desc">Dorre de Bakker</div></div>
+            <div class="Portfolio"><a href="Mercator.html"><img class= "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mercator_in_Leuven.JPG/135px-Mercator_in_Leuven.JPG" alt="Mercator"></a><div class="desc">Mercator</div></div>
+            <div class="Portfolio"><a href="Kotmadam.html"><img class=  "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Leuven_Beeld_de_Kotmadam.jpg/320px-Leuven_Beeld_de_Kotmadam.jpg" alt="Kotmadam"></a><div class="desc">Kotmadam</div></div>
+            <div class="Portfolio"><a href="Fonske.html"><img class= "card_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Fonske.JPG/160px-Fonske.JPG" alt="Fonske"></a><div class="desc">Fonske</div></div>
+            <div class="Portfolio"><a href="Paep_Thoon.html"><img class= "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Leuven_Paep_Thoon.jpg/161px-Leuven_Paep_Thoon.jpg" alt="Paep Thoon"></a><div class="desc">Paep Thoon</div></div>
+            <div class="Portfolio"><a href="Zittend_meisje.html"><img class= "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/42252_-_Belgi%C3%AB_-_Kruidtuin_Leuven_-_16.jpg/160px-42252_-_Belgi%C3%AB_-_Kruidtuin_Leuven_-_16.jpg" alt="Zittend meisje"></a><div class="desc">Zittend meisje</div></div>
+            <div class="Portfolio"><a href="Ballon.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Leuven_Ballon_van_de_Vriendschap_01.jpg/206px-Leuven_Ballon_van_de_Vriendschap_01.jpg" alt="Ballon van de Vriendschap"></a><div class="desc">Vriendschapsballon</div></div>
+            <div class="Portfolio"><a href="Man_en_vrouw.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Leuven_Dodeigne_Man_en_Vrouw_01.jpg/181px-Leuven_Dodeigne_Man_en_Vrouw_01.jpg" alt="Man en vrouw"></a><div class="desc">Man en vrouw</div></div>
+            <div class="Portfolio"><a href="Konig_Albert_I.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Leuven%2C_borstbeeld_Koning_Albert_I.jpg/160px-Leuven%2C_borstbeeld_Koning_Albert_I.jpg" alt="Koning Albert I"></a><div class="desc">Koning Albert I</div></div>
+            <div class="Portfolio"><a href="Fiere_Margriet.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Fiere_Margriet_Willy_Meysmans_03.jpg/320px-Fiere_Margriet_Willy_Meysmans_03.jpg" alt="Fiere Margriet"></a><div class="desc">Fiere Margriet</div></div>
+            <div class="Portfolio"><a href="Jaquemart.html"><img class= "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/JacquemartCollegialeSaintPierreLouvain.JPG/301px-JacquemartCollegialeSaintPierreLouvain.JPG" alt="Jaquemart"></a><div class="desc">Jacquemart</div></div>
+            <div class="Portfolio"><a href="Totem.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Totem%2C_Ladeuzeplein.jpg/180px-Totem%2C_Ladeuzeplein.jpg" alt="Totem"></a><div class="desc">Totem</div></div>
+            <div class="Portfolio"><a href="Pieter_de_Somer.html"><img class="card-img" src="https://www.kuleuven.be/kunstenerfgoed/kunstpatrimonium/afbeeldingen/kul015175.jpg/@@images/image/large" alt="Pieter de Somer"></a><div class="desc">Pieter de Somer</div></div>
+            <div class="Portfolio"><a href="Erasmus.html"><img class="card-img" src="https://beeldenwandelingleuven.files.wordpress.com/2015/04/p1070850_2.jpg" alt="Erasmus"></a><div class="desc">Erasmus</div></div>
+            <div class="Portfolio"><a href="Eend.html"><img class="card-img" src="https://mapio.net/images-p/45006923.jpg" alt="De Dijle Eend"></a><div class="desc">De Dijle Eend</div></div>
+            <div class="Portfolio"><a href="Europe.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Leuven-Provinciehuis_Vlaams-Brabant_Provincieplein_%2812%29.jpg/320px-Leuven-Provinciehuis_Vlaams-Brabant_Provincieplein_%2812%29.jpg" alt=""></a><div class="desc">Europe</div></div>
+            <div class="Portfolio"><a href="Justus_Lipsius.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Leuven_Standbeeld_van_Justus_Lipsius_02.jpg/160px-Leuven_Standbeeld_van_Justus_Lipsius_02.jpg" alt="Justus Lipsius"></a><div class="desc">Justus Lipsius</div></div>
+            <div class="Portfolio"><a href="The_koeieskieter.html"><img class="card-img" src="http://farm5.static.flickr.com/4083/4968773972_c8cd8f51db_z.jpg" alt="The Koeieskieter"></a><div class="desc">De koeieskieter</div></div>
+            <div class="Portfolio"><a href="Pater_Damiaan.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Leuven_Standbeeld_Pater_Damiaan.jpg/160px-Leuven_Standbeeld_Pater_Damiaan.jpg" alt=""></a><div class="desc">Pater Damiaan</div></div>
+            <div class="Portfolio"><a href="Kamerood_sesteg.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Jan_Rosseels_bronze_statue_in_Leuven.jpg/180px-Jan_Rosseels_bronze_statue_in_Leuven.jpg" alt=""></a><div class="desc">Kamerood sesteg</div></div>
+            <div class="Portfolio"><a href="Abraham.html"><img class="card-img" src="https://mapio.net/images-p/71030748.jpg" alt=""></a><div class="desc">Abraham</div></div>
+            <div class="Portfolio"><a href="Celestial_globe.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kangxi-Verbiest_hemelglobe_en_historische_pomp_02.jpg/320px-Kangxi-Verbiest_hemelglobe_en_historische_pomp_02.jpg" alt=""></a><div class="desc">Celestial Globe</div></div>
+            <div class="Portfolio"><a href="Vallend_paard.html"><img class="card-img" src="https://leenhuet.files.wordpress.com/2012/08/poot.jpg" alt=""></a><div class="desc">Vallend Paard</div></div>
+            <div class="Portfolio"><a href="De_Witte.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Leuven_De_Witte_01.jpg/180px-Leuven_De_Witte_01.jpg" alt=""></a><div class="desc">De Witte</div></div>
+            <div class="Portfolio"><a href="Edouard_Remy.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Leuven_Bust_Edouard_Remy.jpg/192px-Leuven_Bust_Edouard_Remy.jpg" alt="Eduard_Rémy"></a><div class="desc">Edouard Remy</div></div>
+            <div class="Portfolio"><a href="Kanaalgravers.html"><img class="card-img" src="http://farm5.static.flickr.com/4132/4968748788_c9b4330333_z.jpg" alt="Kanaalgravers"></a><div class="desc">Kanaalgravers</div></div>
+            <div class="Portfolio"><a href="André_Dumont.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Leuven_Standbeeld_van_Andr%C3%A9_Dumont.jpg/160px-Leuven_Standbeeld_van_Andr%C3%A9_Dumont.jpg" alt="André Dumont"></a><div class="desc">André Dumont</div></div>
+            <div class="Portfolio"><a href="De_Lopers.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/De_Lopers_-_Heverlee.jpg/320px-De_Lopers_-_Heverlee.jpg" alt="De Lopers"></a><div class="desc">De Lopers</div></div>
+            <div class="Portfolio"><a href="Oude_Kantien.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Oude_Kantien_Heverlee_%28statues%29.jpg/162px-Oude_Kantien_Heverlee_%28statues%29.jpg" alt="Oude Kantien"></a><div class="desc">Oude Kantien</div></div>
+            <div class="Portfolio"><a href="Van_de_Weyer.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sylvainvandeweyer.JPG/180px-Sylvainvandeweyer.JPG" alt="Van de Weyer"></a><div class="desc">Van de Weyer</div></div>
+            <div class="Portfolio"><a href="Stadhuis.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Erasmus_stadhuis_Leuven.JPG/390px-Erasmus_stadhuis_Leuven.JPG" alt="Stadhuis"></a><div class="desc">Stadhuis</div></div>
+            <div class="Portfolio"><a href="Pieter_Coutereel.html"><img class="card-img" src="https://be-monumen.be/wp-content/uploads/Pieter-Coutereel-01-188x250.jpg" alt="Pieter Coutereel"></a><div class="desc">Pieter Coutereel</div></div>
+            <div class="Portfolio"><a href="Resistance.html"><img class="card-img" src="https://www.tracesofwar.com/upload/1402130827185039.jpg" alt="Resistance"></a><div class="desc">Resistance</div></div>
+            <div class="Portfolio"><a href="Leeuwenpaar.html"><img class="card-img" src="http://www.wandelpaden.com/images/belgie/LEUVEN14.JPG" alt="Leeuwenpaar"></a><div class="desc">Leeuwenpaar</div></div>
+            <div class="Portfolio"><a href="Léon_Schreurs.html"><img class="card-img" src="https://www.tracesofwar.com/upload/0658170923195313.JPG" alt="Léon Schreurs"></a><div class="desc">Léon Schreurs</div></div>
+            <div class="Portfolio"><a href="Het_Moorinneken.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Het_Moorinneken_-_Leuven%2C_Belgium_-_DSC04838.JPG/320px-Het_Moorinneken_-_Leuven%2C_Belgium_-_DSC04838.JPG" alt="Het Moorinneken"></a><div class="desc">Het Moorinneken</div></div>
+            <div class="Portfolio"><a href="War_memorial_Leuven.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Great_War_Memorial_in_Louvain_-_panoramio.jpg/320px-Great_War_Memorial_in_Louvain_-_panoramio.jpg" alt="War memorial"></a><div class="desc">War memorial L.</div></div>
+
+            <div class="Portfolio"><a href="Albert_Giraud.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Leuven_Sint-Donatuspark_IV.jpg/160px-Leuven_Sint-Donatuspark_IV.jpg" alt="Albert Giraud"></a><div class="desc">Albert Giraud</div></div>
+            <div class="Portfolio"><a href="Hand_van_Prometheus.html"><img class="card-img" src="http://farm4.static.flickr.com/3204/2863104705_4bf3f4bffa.jpg" alt="Hand van Prometheus"></a><div class="desc">Prometheus' hand</div></div>
+            <div class="Portfolio"><a href="War_memorial_Heverlee.html"><img class="card-img" src="https://beeldbank.onroerenderfgoed.be/images/170879/content/medium" alt="War memorial Heverlee"></a><div class="desc">War memorial H.</div></div>
+            <div class="Portfolio"><a href="Rembert_Dodoens.html"><img class="card-img" src="https://farm5.staticflickr.com/4780/40636773302_cf7b791780.jpg" alt="Rembert Dodoens"></a><div class="desc">Rembert Dodoens</div></div>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><svg class="bi bi-arrow-up" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V4a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 3.707 5.354 6.354a.5.5 0 11-.708-.708l3-3z" clip-rule="evenodd"/>
+            </svg></button>
+        </div>
+
+        <div class="tab-pane" id="historical" role="tabpanel" aria-labelledby="historical-tab">
+            <div class="Portfolio"><a href="Mercator.html"><img class= "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mercator_in_Leuven.JPG/135px-Mercator_in_Leuven.JPG" alt="Mercator"></a><div class="desc">Mercator</div></div>
+            <div class="Portfolio"><a href="Paep_Thoon.html"><img class= "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Leuven_Paep_Thoon.jpg/161px-Leuven_Paep_Thoon.jpg" alt="Paep Thoon"></a><div class="desc">Paep Thoon</div></div>
+            <div class="Portfolio"><a href="Konig_Albert_I.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Leuven%2C_borstbeeld_Koning_Albert_I.jpg/160px-Leuven%2C_borstbeeld_Koning_Albert_I.jpg" alt="Koning Albert I"></a><div class="desc">Koning Albert I</div></div>
+            <div class="Portfolio"><a href="Fiere_Margriet.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Fiere_Margriet_Willy_Meysmans_03.jpg/320px-Fiere_Margriet_Willy_Meysmans_03.jpg" alt="Fiere Margriet"></a><div class="desc">Fiere Margriet</div></div>
+            <div class="Portfolio"><a href="Pieter_de_Somer.html"><img class="card-img" src="https://www.kuleuven.be/kunstenerfgoed/kunstpatrimonium/afbeeldingen/kul015175.jpg/@@images/image/large" alt="Pieter de Somer"></a><div class="desc">Pieter de Somer</div></div>
+            <div class="Portfolio"><a href="Erasmus.html"><img class="card-img" src="https://beeldenwandelingleuven.files.wordpress.com/2015/04/p1070850_2.jpg" alt="Erasmus"></a><div class="desc">Erasmus</div></div>
+            <div class="Portfolio"><a href="Justus_Lipsius.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Leuven_Standbeeld_van_Justus_Lipsius_02.jpg/160px-Leuven_Standbeeld_van_Justus_Lipsius_02.jpg" alt="Justus Lipsius"></a><div class="desc">Justus Lipsius</div></div>
+            <div class="Portfolio"><a href="Pater_Damiaan.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Leuven_Standbeeld_Pater_Damiaan.jpg/160px-Leuven_Standbeeld_Pater_Damiaan.jpg" alt="Pater Damiaan"></a><div class="desc">Pater Damiaan</div></div>
+            <div class="Portfolio"><a href="Edouard_Remy.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Leuven_Bust_Edouard_Remy.jpg/192px-Leuven_Bust_Edouard_Remy.jpg" alt="Edouard Remy"></a><div class="desc">Edouard Remy</div></div>
+            <div class="Portfolio"><a href="André_Dumont.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Leuven_Standbeeld_van_Andr%C3%A9_Dumont.jpg/160px-Leuven_Standbeeld_van_Andr%C3%A9_Dumont.jpg" alt="André Dumont"></a><div class="desc">André Dumont</div></div>
+            <div class="Portfolio"><a href="Oude_Kantien.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Oude_Kantien_Heverlee_%28statues%29.jpg/162px-Oude_Kantien_Heverlee_%28statues%29.jpg" alt="Oude Kantien"></a><div class="desc">Oude Kantien</div></div>
+            <div class="Portfolio"><a href="Van_de_Weyer.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sylvainvandeweyer.JPG/180px-Sylvainvandeweyer.JPG" alt="Van de Weyer"></a><div class="desc">Van de Weyer</div></div>
+            <div class="Portfolio"><a href="Stadhuis.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Erasmus_stadhuis_Leuven.JPG/390px-Erasmus_stadhuis_Leuven.JPG" alt="Stadhuis"></a><div class="desc">Stadhuis</div></div>
+            <div class="Portfolio"><a href="Pieter_Coutereel.html"><img class="card-img" src="https://be-monumen.be/wp-content/uploads/Pieter-Coutereel-01-188x250.jpg" alt="Pieter Coutereel"></a><div class="desc">Pieter Coutereel</div></div>
+            <div class="Portfolio"><a href="Léon_Schreurs.html"><img class="card-img" src="https://www.tracesofwar.com/upload/0658170923195313.JPG" alt="Léon Schreurs"></a><div class="desc">Léon Schreurs</div></div>
+            <div class="Portfolio"><a href="Kanaalgravers.html"><img class="card-img" src="http://farm5.static.flickr.com/4132/4968748788_c9b4330333_z.jpg" alt="Kanaalgravers"></a><div class="desc">Kanaalgravers</div></div>
+            <div class="Portfolio"><a href="Albert_Giraud.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Leuven_Sint-Donatuspark_IV.jpg/160px-Leuven_Sint-Donatuspark_IV.jpg" alt="Albert Giraud"></a><div class="desc">Albert Giraud</div></div>
+            <div class="Portfolio"><a href="Rembert_Dodoens.html"><img class="card-img" src="https://farm5.staticflickr.com/4780/40636773302_cf7b791780.jpg" alt="Rembert Dodoens"></a><div class="desc">Rembert Dodoens</div></div>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><svg class="bi bi-arrow-up" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V4a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 3.707 5.354 6.354a.5.5 0 11-.708-.708l3-3z" clip-rule="evenodd"/>
+            </svg></button>
+
+        </div>
+
+        <div class="tab-pane fade" id="imaginary" role="tabpanel" aria-labelledby="imaginary-tab">
+            <div class="Portfolio"><a href="Dorre_de_Bakker.html"><img class= "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Leuven_Dorre_de_Bakker.jpg/160px-Leuven_Dorre_de_Bakker.jpg" alt= "Dorre de Bakker"></a><div class="desc">Dorre de Bakker</div></div>
+            <div class="Portfolio"><a href="Fonske.html"><img class= "card_img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Fonske.JPG/160px-Fonske.JPG" alt="Fonske"></a><div class="desc">Fonske</div></div>
+            <div class="Portfolio"><a href="Jaquemart.html"><img class= "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/JacquemartCollegialeSaintPierreLouvain.JPG/301px-JacquemartCollegialeSaintPierreLouvain.JPG" alt="Jaquemart"></a><div class="desc">Jacquemart</div></div>
+            <div class="Portfolio"><a href="Man_en_vrouw.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Leuven_Dodeigne_Man_en_Vrouw_01.jpg/181px-Leuven_Dodeigne_Man_en_Vrouw_01.jpg" alt="Man en vrouw"></a><div class="desc">Man en vrouw</div></div>
+            <div class="Portfolio"><a href="Europe.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Leuven-Provinciehuis_Vlaams-Brabant_Provincieplein_%2812%29.jpg/320px-Leuven-Provinciehuis_Vlaams-Brabant_Provincieplein_%2812%29.jpg" alt=""></a><div class="desc">Europe</div></div>
+            <div class="Portfolio"><a href="The_koeieskieter.html"><img class="card-img" src="http://farm5.static.flickr.com/4083/4968773972_c8cd8f51db_z.jpg" alt="The Koeieskieter"></a><div class="desc">The Koeieskieter</div></div>
+            <div class="Portfolio"><a href="Kamerood_sesteg.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Jan_Rosseels_bronze_statue_in_Leuven.jpg/180px-Jan_Rosseels_bronze_statue_in_Leuven.jpg" alt=""></a><div class="desc">Kamerood sesteg</div></div>
+            <div class="Portfolio"><a href="Abraham.html"><img class="card-img" src="https://mapio.net/images-p/71030748.jpg" alt=""></a><div class="desc">Abraham</div></div>
+            <div class="Portfolio"><a href="De_Witte.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Leuven_De_Witte_01.jpg/180px-Leuven_De_Witte_01.jpg" alt="De Witte"></a><div class="desc">De Witte</div></div>
+            <div class="Portfolio"><a href="Kotmadam.html"><img class= "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Leuven_Beeld_de_Kotmadam.jpg/320px-Leuven_Beeld_de_Kotmadam.jpg" alt="Kotmadam"></a><div class="desc">Kotmadam</div></div>
+            <div class="Portfolio"><a href="Renée.html"><img class= "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Leuven_Ren%C3%A9e.jpg/160px-Leuven_Ren%C3%A9e.jpg" alt="Renée"></a><div class="desc">Renée</div></div>
+            <div class="Portfolio"><a href="Zittend_meisje.html"><img class= "card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/42252_-_Belgi%C3%AB_-_Kruidtuin_Leuven_-_16.jpg/160px-42252_-_Belgi%C3%AB_-_Kruidtuin_Leuven_-_16.jpg" alt="Zittend meisje"></a><div class="desc">Zittend meisje</div></div>
+            <div class="Portfolio"><a href="De_Lopers.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/De_Lopers_-_Heverlee.jpg/320px-De_Lopers_-_Heverlee.jpg" alt="De Lopers"></a><div class="desc">De Lopers</div></div>
+            <div class="Portfolio"><a href="Resistance.html"><img class="card-img" src="https://www.tracesofwar.com/upload/1402130827185039.jpg" alt="Resistance"></a><div class="desc">Resistance</div></div>
+            <div class="Portfolio"><a href="Ballon.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Leuven_Ballon_van_de_Vriendschap_01.jpg/206px-Leuven_Ballon_van_de_Vriendschap_01.jpg" alt="Vriendschapsballon"></a><div class="desc">Vriendschapsballon</div></div>
+            <div class="Portfolio"><a href="Celestial_globe.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kangxi-Verbiest_hemelglobe_en_historische_pomp_02.jpg/320px-Kangxi-Verbiest_hemelglobe_en_historische_pomp_02.jpg" alt=""></a><div class="desc">Celestial Globe</div></div>
+            <div class="Portfolio"><a href="War_memorial_Leuven.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Great_War_Memorial_in_Louvain_-_panoramio.jpg/320px-Great_War_Memorial_in_Louvain_-_panoramio.jpg" alt="War memorial"></a><div class="desc">War memorial</div></div>
+            <div class="Portfolio"><a href="Hand_van_Prometheus.html"><img class="card-img" src="http://farm4.static.flickr.com/3204/2863104705_4bf3f4bffa.jpg" alt="Hand van Prometheus"></a><div class="desc">Prometheus' hand</div></div>
+            <div class="Portfolio"><a href="War_memorial_Heverlee.html"><img class="card-img" src="https://beeldbank.onroerenderfgoed.be/images/170879/content/medium" alt="War memorial Heverlee"></a><div class="desc">War memorial H.</div></div>
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><svg class="bi bi-arrow-up" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 3.5a.5.5 0 01.5.5v9a.5.5 0 01-1 0V4a.5.5 0 01.5-.5z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 01.708 0l3 3a.5.5 0 01-.708.708L8 3.707 5.354 6.354a.5.5 0 11-.708-.708l3-3z" clip-rule="evenodd"/>
+            </svg></button>
+        </div>
+
+        <div class="tab-pane fade" id="animals" role="tabpanel" aria-labelledby="animals-tab">
+            <div class="Portfolio"><a href="Totem.html"><img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Totem%2C_Ladeuzeplein.jpg/180px-Totem%2C_Ladeuzeplein.jpg" alt="Totem"></a><div class="desc">Totem</div></div>
+            <div class="Portfolio"><a href="Eend.html"><img class="card-img" src="https://mapio.net/images-p/45006923.jpg" alt="De Dijle Eend"></a><div class="desc">The Dijle Eend</div></div>
+            <div class="Portfolio"><a href="Vallend_paard.html"><img class="card-img" src="https://leenhuet.files.wordpress.com/2012/08/poot.jpg" alt=""></a><div class="desc">Vallend Paard</div></div>
+            <div class="Portfolio"><a href="Leeuwenpaar.html"><img class="card-img" src="http://www.wandelpaden.com/images/belgie/LEUVEN14.JPG" alt="Leeuweenpar"></a><div class="desc">Leeuwenpaar</div></div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<br><br>
+<br>
+<br>
+
+<div class="footer"><b><svg class="bi bi-heart" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 01.176-.17C12.72-3.042 23.333 4.867 8 15z" clip-rule="evenodd"/>
+</svg>  Designed and built by Martina & Fien using just CSS and Bootstrap</b></div>
+
+
+</div>
+</body>
+</html>
